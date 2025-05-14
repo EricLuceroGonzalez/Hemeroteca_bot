@@ -1,0 +1,9 @@
+tweepy
+os
+json
+requests
+locale
+datetime
+apscheduler
+dotenv
+cloudinary
