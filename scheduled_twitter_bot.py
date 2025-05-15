@@ -157,7 +157,7 @@ def post_scheduled_tweets():
             else:
                 tweet_text = f"{tweet['text']}  📅 Publicado originalmente el {formatted_date}.  📚 Fuente: Biblioteca Nacional de Panamá."
 
-            # client.create_tweet(text=tweet_text, media_ids=[media.media_id])
+            client.create_tweet(text=tweet_text, media_ids=[media.media_id])
             tweet["isPublished"] = True
             logging.info(f"Tweet posted: {tweet_text}")
 

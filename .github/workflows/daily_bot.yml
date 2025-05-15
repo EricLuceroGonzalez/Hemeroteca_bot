@@ -1,8 +1,8 @@
 name: Daily Post
 on:
   schedule:
-    - cron: "00 17 * * *" # Runs at 12:00 UTC daily (adjust timezone as needed)
-  workflow_dispatch: # Optional: Manual trigger
+    - cron: "00 18 * * *" # Runs at 18:00 UTC daily
+  workflow_dispatch: # Optional: Manual trigger on Github
 
 jobs:
   run-bot:
