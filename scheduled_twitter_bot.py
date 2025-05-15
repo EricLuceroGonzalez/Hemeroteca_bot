@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(
     filename=f"{os.path.dirname(__file__)}/hemeroteca_bot.log",
     encoding="utf-8",
-    filemode="w",
+    # filemode="w",
     format="%(levelname)s:%(message)s",
     level=logging.INFO,
 )
@@ -35,18 +35,30 @@ except locale.Error:
 # Load environment variables from .env file
 load_dotenv()
 
+
+# Get credentials with error handling
+def get_credential(name):
+    value = os.getenv(name)
+    if not value:
+        logging.error(f"Missing required environment variable: {name}")
+        raise ValueError(f"Missing required environment variable: {name}")
+    return value
+
+
 # Twitter API credentials
 client = tweepy.Client(
-    os.getenv("X_BEARER_TOKEN"),
-    os.getenv("X_API_KEY"),
-    os.getenv("X_API_KEY_SECRET"),
-    os.getenv("X_ACCESS_TOKEN"),
-    os.getenv("X_ACCESS_TOKEN_SECRET"),
+    bearer_token=get_credential("X_BEARER_TOKEN"),
+    consumer_key=get_credential("X_API_KEY"),
+    consumer_secret=get_credential("X_API_KEY_SECRET"),
+    access_token=get_credential("X_ACCESS_TOKEN"),
+    access_token_secret=get_credential("X_ACCESS_TOKEN_SECRET"),
 )
 
 auth = tweepy.OAuthHandler(
-    os.getenv("X_API_KEY"),
-    os.getenv("X_API_KEY_SECRET"),
+    get_credential("X_API_KEY"),
+    get_credential("X_API_KEY_SECRET"),
+    get_credential("X_ACCESS_TOKEN"),
+    get_credential("X_ACCESS_TOKEN_SECRET"),
 )
 
 auth.set_access_token(
