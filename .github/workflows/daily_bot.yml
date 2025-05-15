@@ -20,11 +20,11 @@ jobs:
 
       - name: Run script
         env:
-          X-BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-          X-API_KEY: ${{ secrets.X_API_KEY }}
-          X-API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
-          X-ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X-ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
