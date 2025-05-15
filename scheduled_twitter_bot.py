@@ -6,6 +6,8 @@ import locale
 from datetime import datetime
 from dotenv import load_dotenv
 import logging
+from babel.dates import format_date
+
 
 logger = logging.getLogger(__name__)
 
@@ -30,6 +32,7 @@ try:
     locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
 except locale.Error:
     # Fallback: use the default locale or log a warning
+    logging.error("Locale 'es_ES.UTF-8' not available. Using default locale.")
     pass
 
 # Load environment variables from .env file
@@ -124,7 +127,8 @@ def post_scheduled_tweets():
         scheduled_time = datetime.strptime(tweet["date"], "%Y-%m-%dT%H:%M:%S")
 
         # Check if the tweet is scheduled for the current date
-        if scheduled_time.date() == now.date() and not tweet.get("isPublished", False):
+        if scheduled_time.date() == now.date():
+            # and not tweet.get("isPublished", False):
             posted += 1
             # Download the image from Cloudinary
             image_url = tweet["image"]
@@ -139,8 +143,13 @@ def post_scheduled_tweets():
             logging.info(f"Image uploaded: {media.media_id}")
             # Post the tweet with the image and text
             if tweet["published"] != "":
+                # published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
+                # formatted_date = published_date.strftime("%d de %B de %Y")
+                # Format dates in Spanish
                 published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
-                formatted_date = published_date.strftime("%d de %B de %Y")
+                formatted_date = format_date(
+                    published_date, "d 'de' MMMM 'de' yyyy", locale="es"
+                )
             if tweet["published"] == "":
                 formatted_date = "Hace un tiempo."
             if tweet["text"] == "":
@@ -148,7 +157,7 @@ def post_scheduled_tweets():
             else:
                 tweet_text = f"{tweet['text']}  📅 Publicado originalmente el {formatted_date}.  📚 Fuente: Biblioteca Nacional de Panamá."
 
-            client.create_tweet(text=tweet_text, media_ids=[media.media_id])
+            # client.create_tweet(text=tweet_text, media_ids=[media.media_id])
             tweet["isPublished"] = True
             logging.info(f"Tweet posted: {tweet_text}")
 
