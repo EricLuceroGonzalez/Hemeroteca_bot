@@ -5,7 +5,20 @@ import requests
 import locale
 from datetime import datetime
 from dotenv import load_dotenv
+import logging
 
+logger = logging.getLogger(__name__)
+
+# file_path = os.path.join(os.path.dirname(__file__), "data.json")
+logging.basicConfig(
+    filename=f"{os.path.dirname(__file__)}/hemeroteca_bot.log",
+    encoding="utf-8",
+    filemode="w",
+    format="%(levelname)s:%(message)s",
+    level=logging.INFO,
+)
+today = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+logging.info(today)
 # from apscheduler.schedulers.blocking import BlockingScheduler
 
 # Cloudinary libraries for uploading/getting images
@@ -51,11 +64,11 @@ def ConnectToCloudinary():
     # Check if the connection is successful
     try:
         cloudinary.api.ping()
-        print("\nCloudinary connection successful!\n")
-        GetFolderFiles()
+        logging.info("\nCloudinary connection successful!\n")
+        # GetFolderFiles()
         return cloudinary
     except Exception as e:
-        print("Error connecting to Cloudinary:", e)
+        logging.info("Error connecting to Cloudinary")
         return None
 
 
@@ -69,10 +82,10 @@ def GetFolderFiles():
         files = resources.get("resources", [])
         for file in files:
             # TODO: Check if file exist in data.json. if not, add it as a template element of the json.
-            print(f"URL: {file['url']}\n")
+            logging.debug(f"URL: {file}\n")
         return files
     except Exception as e:
-        print(f"Error fetching files from folder '{folder_name}': {e}")
+        logging.debug(f"Error fetching files from folder '{folder_name}': {e}")
         return []
 
 
@@ -80,33 +93,34 @@ def GetFolderFiles():
 def post_scheduled_tweets():
     json_path = os.path.join(os.path.dirname(__file__), "data.json")
     # Load JSON file
-    print(f"Loading JSON file from {json_path}...")
+    logging.debug(f"Loading JSON file from {json_path}...")
     with open(json_path, "r") as f:
-        print("\n\n\n Loading JSON file...")
+        logging.debug("Loading JSON file...")
         tweets = json.load(f)
 
     # Get current date and time
     now = datetime.now()
-    print("Current date and time:", now)
 
+    not_posted = 0
+    posted = 0
     for tweet in tweets:
         # Parse the scheduled date and time
         scheduled_time = datetime.strptime(tweet["date"], "%Y-%m-%dT%H:%M:%S")
-        # print(f"Scheduled time: {scheduled_time}")
 
         # Check if the tweet is scheduled for the current date
         if scheduled_time.date() == now.date() and not tweet.get("isPublished", False):
+            posted += 1
             # Download the image from Cloudinary
             image_url = tweet["image"]
-            print(f"Downloading image from {image_url}")
+            logging.info(f"Downloading image from Cloud")  # {image_url}
             image_response = requests.get(image_url)
-            image_path = "temp_image.jpg"
+            image_path = f"{os.path.dirname(__file__)}/temp_image.jpg"
             with open(image_path, "wb") as img_file:
                 img_file.write(image_response.content)
 
             # Upload the image to Twitter
             media = api.media_upload(image_path)
-            print(f"Image uploaded: {media.media_id}")
+            logging.info(f"Image uploaded: {media.media_id}")
             # Post the tweet with the image and text
             if tweet["published"] != "":
                 published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
@@ -116,15 +130,21 @@ def post_scheduled_tweets():
             if tweet["text"] == "":
                 tweet_text = f"Publicado el {formatted_date}"
             else:
-                tweet_text = f"{tweet['text']} Publicado originalmente el {formatted_date}. Fuente: Biblioteca Nacional de Panamá."
+                tweet_text = f"{tweet['text']}  📅 Publicado originalmente el {formatted_date}.  📚 Fuente: Biblioteca Nacional de Panamá."
 
             client.create_tweet(text=tweet_text, media_ids=[media.media_id])
             tweet["isPublished"] = True
-            print(f"Tweet posted: {tweet['text']}")
+            logging.info(f"Tweet posted: {tweet_text}")
+            # Remove the temporary image file# logging.debug(f"Scheduled time: {scheduled_time}")
+        if tweet["isPublished"] == False:
+            not_posted += 1
+        if tweet["isPublished"] == True:
+            posted += 1
+    logging.info(f"Not posted: {not_posted}, posted: {posted}")
     # Save the updated JSON file
     with open(json_path, "w") as f:
         json.dump(tweets, f, indent=4)
-        print("Updated JSON file saved.")
+        logging.info("Updated JSON file saved.")
 
 
 # Scheduler to run the function once every 24 hours
@@ -132,5 +152,5 @@ def post_scheduled_tweets():
 # scheduler.add_job(post_scheduled_tweets, "interval", seconds=10)
 # scheduler.start()
 
-ConnectToCloudinary()
+# ConnectToCloudinary()
 post_scheduled_tweets()

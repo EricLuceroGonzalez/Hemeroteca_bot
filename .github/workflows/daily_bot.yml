@@ -1,7 +1,7 @@
 name: Daily Post
 on:
   schedule:
-    - cron: "22 09 * * *" # Runs at 12:00 UTC daily (adjust timezone as needed)
+    - cron: "25 10 * * *" # Runs at 12:00 UTC daily (adjust timezone as needed)
   workflow_dispatch: # Optional: Manual trigger
 
 jobs:

@@ -1,9 +1,5 @@
 tweepy
-os
-json
 requests
-locale
-datetime
 apscheduler
-dotenv
+python-dotenv
 cloudinary
