@@ -6,6 +6,7 @@ import locale
 from datetime import datetime
 from dotenv import load_dotenv
 import logging
+import random
 from babel.dates import format_date
 
 
@@ -108,6 +109,57 @@ def GetFolderFiles():
         return []
 
 
+# Lista de emojis relevantes para contenido histórico/archivístico
+EMOJIS = {
+    "opener": ["📰", "📜", "🎞️", "🧳", "🗞️", "🔍", "📸", "🏛️", "👀"],
+    "items": ["✨", "🌟", "🔹", "🎯", "🔖", "📌", "🌀"],
+    "publicado": ["📅", "🗓️", "🕰️"],
+    "fuente": ["📚", "🏷️", "🗃️", "🖋️", "🌴", "⛲️"],
+}
+
+
+def generar_tweet(tweet_data, formatted_date):
+    # Seleccionar emojis aleatorios
+    emoji_opener = random.choice(EMOJIS["opener"])
+    emoji_publicado = random.choice(EMOJIS["publicado"])
+    emoji_item = random.choice(EMOJIS["items"])
+    emoji_fuente = random.choice(EMOJIS["fuente"])
+
+    # Formatear fecha
+    if tweet_data["published"]:
+        fecha_str = f"{emoji_publicado} Publicado el {formatted_date}\n"
+    else:
+        fecha_str = f"{emoji_item} Hace un tiempo\n"
+
+    # Construir texto principal
+    if tweet_data["text"] != "":
+        texto_principal = f"{emoji_opener} {tweet_data['text']}\n"
+    else:
+        texto_principal = f"{emoji_opener}Archivo de hemeroteca.\n"
+
+    # Construir tweet completo
+    tweet_text = (
+        f"{texto_principal}"
+        f"{fecha_str}"
+        f"{emoji_fuente} Fuente: Biblioteca Nacional de Panamá\n"
+    )
+
+    # Añadir hashtags aleatorios (opcional)
+    hashtags = [
+        "#PanamáAntiguo",
+        "#MemoriaDigital",
+        "#HistoriaViva",
+        "#ArchivoPanamá",
+        "#Hemeroteca",
+        "#CulturaPanameña",
+        "#BibliotecaNacional",
+    ]
+    if random.random() > 0.5:  # 50% de probabilidad de añadir hashtag
+        tweet_text += f" {random.choice(hashtags)}"
+
+    return tweet_text
+
+
 # Function to post tweets from JSON file
 def post_scheduled_tweets():
     json_path = os.path.join(os.path.dirname(__file__), "data.json")
@@ -129,7 +181,7 @@ def post_scheduled_tweets():
         # Check if the tweet is scheduled for the current date
         if scheduled_time.date() == now.date():
             # and not tweet.get("isPublished", False):
-            posted += 1
+            # posted += 1
             # Download the image from Cloudinary
             image_url = tweet["image"]
             logging.info(f"Downloading image from Cloud")  # {image_url}
@@ -150,19 +202,13 @@ def post_scheduled_tweets():
                 formatted_date = format_date(
                     published_date, "d 'de' MMMM 'de' yyyy", locale="es"
                 )
-            if tweet["published"] == "":
-                formatted_date = "Hace un tiempo."
-            if tweet["text"] == "":
-                tweet_text = f"Publicado el {formatted_date}"
-            else:
-                tweet_text = f"{tweet['text']}  📅 Publicado originalmente el {formatted_date}.  📚 Fuente: Biblioteca Nacional de Panamá."
 
+            tweet_text = generar_tweet(tweet, formatted_date)
             client.create_tweet(text=tweet_text, media_ids=[media.media_id])
             tweet["isPublished"] = True
             logging.info(f"Tweet posted: {tweet_text}")
 
             # Remove the temporary image file# logging.debug(f"Scheduled time: {scheduled_time}")
-        # TODO: Eliminate the boolean to check and keep just the date
         if tweet["isPublished"] == False:
             not_posted += 1
         if tweet["isPublished"] == True:
