@@ -26,7 +26,11 @@ import cloudinary
 import cloudinary.api
 
 # Set locale to Spanish for date formatting
-locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+try:
+    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
+except locale.Error:
+    # Fallback: use the default locale or log a warning
+    pass
 
 # Load environment variables from .env file
 load_dotenv()
