@@ -1,7 +1,7 @@
 name: Daily Post
 on:
   schedule:
-    - cron: "07 09 * * *" # Runs at 12:00 UTC daily (adjust timezone as needed)
+    - cron: "22 09 * * *" # Runs at 12:00 UTC daily (adjust timezone as needed)
   workflow_dispatch: # Optional: Manual trigger
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: pip install -r requirements.txt

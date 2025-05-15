@@ -20,21 +20,21 @@ load_dotenv()
 
 # Twitter API credentials
 client = tweepy.Client(
-    os.environ["X-BEARER_TOKEN"],
-    os.environ["X-API_KEY"],
-    os.environ["X-API_KEY_SECRET"],
-    os.environ["X-ACCESS_TOKEN"],
-    os.environ["X-ACCESS_TOKEN_SECRET"],
+    os.environ["X_BEARER_TOKEN"],
+    os.environ["X_API_KEY"],
+    os.environ["X_API_KEY_SECRET"],
+    os.environ["X_ACCESS_TOKEN"],
+    os.environ["X_ACCESS_TOKEN_SECRET"],
 )
 
 auth = tweepy.OAuthHandler(
-    os.environ["X-API_KEY"],
-    os.environ["X-API_KEY_SECRET"],
+    os.environ["X_API_KEY"],
+    os.environ["X_API_KEY_SECRET"],
 )
 
 auth.set_access_token(
-    os.environ["X-ACCESS_TOKEN"],
-    os.environ["X-ACCESS_TOKEN_SECRET"],
+    os.environ["X_ACCESS_TOKEN"],
+    os.environ["X_ACCESS_TOKEN_SECRET"],
 )
 
 api = tweepy.API(auth)
