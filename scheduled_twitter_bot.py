@@ -151,7 +151,9 @@ def post_scheduled_tweets():
             client.create_tweet(text=tweet_text, media_ids=[media.media_id])
             tweet["isPublished"] = True
             logging.info(f"Tweet posted: {tweet_text}")
+
             # Remove the temporary image file# logging.debug(f"Scheduled time: {scheduled_time}")
+        # TODO: Eliminate the boolean to check and keep just the date
         if tweet["isPublished"] == False:
             not_posted += 1
         if tweet["isPublished"] == True:
