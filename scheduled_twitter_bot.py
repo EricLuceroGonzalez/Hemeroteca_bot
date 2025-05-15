@@ -37,21 +37,21 @@ load_dotenv()
 
 # Twitter API credentials
 client = tweepy.Client(
-    os.environ["X_BEARER_TOKEN"],
-    os.environ["X_API_KEY"],
-    os.environ["X_API_KEY_SECRET"],
-    os.environ["X_ACCESS_TOKEN"],
-    os.environ["X_ACCESS_TOKEN_SECRET"],
+    os.getenv("X_BEARER_TOKEN"),
+    os.getenv("X_API_KEY"),
+    os.getenv("X_API_KEY_SECRET"),
+    os.getenv("X_ACCESS_TOKEN"),
+    os.getenv("X_ACCESS_TOKEN_SECRET"),
 )
 
 auth = tweepy.OAuthHandler(
-    os.environ["X_API_KEY"],
-    os.environ["X_API_KEY_SECRET"],
+    os.getenv("X_API_KEY"),
+    os.getenv("X_API_KEY_SECRET"),
 )
 
 auth.set_access_token(
-    os.environ["X_ACCESS_TOKEN"],
-    os.environ["X_ACCESS_TOKEN_SECRET"],
+    os.getenv("X_ACCESS_TOKEN"),
+    os.getenv("X_ACCESS_TOKEN_SECRET"),
 )
 
 api = tweepy.API(auth)
@@ -60,9 +60,9 @@ api = tweepy.API(auth)
 def ConnectToCloudinary():
     # Connect to Cloudinary
     cloudinary.config(
-        cloud_name=os.environ["CLOUDINARY_CLOUD_NAME"],
-        api_key=os.environ["CLOUDINARY_API_KEY"],
-        api_secret=os.environ["CLOUDINARY_API_SECRET"],
+        cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
+        api_key=os.getenv("CLOUDINARY_API_KEY"),
+        api_secret=os.getenv("CLOUDINARY_API_SECRET"),
         secure=True,
     )
     # Check if the connection is successful
