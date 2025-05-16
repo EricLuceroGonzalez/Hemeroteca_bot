@@ -18,17 +18,9 @@
     {
         "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993580/Hemeroteca_bot/Avance_20_Dic_1949-8.02.53_PM_a3ruo1.png",
         "id": "016-2025",
-        "date": "2025-05-15T18:00:00",
+        "date": "2025-05-16T18:00:00",
         "text": "Recorte de propaganda comercial de la bebida Pepsi-Cola, del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
         "published": "1949-12-20",
-        "isPublished": false
-    },
-    {
-        "id": "008-2025",
-        "date": "2025-05-16T18:00:00",
-        "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993380/Hemeroteca_bot/Aprendo_26_Dic_1999-9.25.54_PM_a7lsez.png",
-        "published": "1999-12-26",
         "isPublished": false
     },
     {
@@ -189,6 +181,14 @@
         "date": "2025-06-05T18:00:00",
         "text": "Bordadora ofrece sus servicios en una de las p\u00e1ginas del semanario quincenal: El Obrero, el \u00d3rgano de Propaganda y Orientaci\u00f3n de la Federaci\u00f3n Obrera de la Rep\u00fablica de Panam\u00e1.",
         "published": "1922-02-25",
+        "isPublished": false
+    },
+    {
+        "id": "008-2025",
+        "date": "2025-06-06T18:00:00",
+        "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
+        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993380/Hemeroteca_bot/Aprendo_26_Dic_1999-9.25.54_PM_a7lsez.png",
+        "published": "1999-12-26",
         "isPublished": false
     },
     {
