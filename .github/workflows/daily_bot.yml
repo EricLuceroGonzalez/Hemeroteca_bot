@@ -7,9 +7,8 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-  permissions:
-    contents: write # Allow the workflow to write to the repository
-
+    permissions:
+      contents: write # Allow the workflow to write to the repository
     steps:
       - uses: actions/checkout@v4
 
@@ -33,7 +32,7 @@ jobs:
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: python scheduled_twitter_bot.py # main script name
       - name: Commit and push changes
-        if: sucess() # Only run if the previous step was successful
+        if: success() # Only run if the previous step was successful
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
