@@ -5,10 +5,11 @@ on:
   workflow_dispatch: # Optional: Manual trigger on Github
 
 jobs:
-  permissions:
-    contents: write # Allow the workflow to write to the repository
   run-bot:
     runs-on: ubuntu-latest
+  permissions:
+    contents: write # Allow the workflow to write to the repository
+
     steps:
       - uses: actions/checkout@v4
 
