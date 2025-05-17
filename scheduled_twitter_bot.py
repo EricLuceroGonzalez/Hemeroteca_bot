@@ -177,11 +177,9 @@ def post_scheduled_tweets():
     for tweet in tweets:
         # Parse the scheduled date and time
         scheduled_time = datetime.strptime(tweet["date"], "%Y-%m-%dT%H:%M:%S")
-
         # Check if the tweet is scheduled for the current date
         if scheduled_time.date() == now.date():
             # and not tweet.get("isPublished", False):
-            # posted += 1
             # Download the image from Cloudinary
             image_url = tweet["image"]
             logging.info(f"Downloading image from Cloud")  # {image_url}
@@ -195,8 +193,6 @@ def post_scheduled_tweets():
             logging.info(f"Image uploaded: {media.media_id}")
             # Post the tweet with the image and text
             if tweet["published"] != "":
-                # published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
-                # formatted_date = published_date.strftime("%d de %B de %Y")
                 # Format dates in Spanish
                 published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
                 formatted_date = format_date(
