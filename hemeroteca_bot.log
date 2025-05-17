@@ -67,3 +67,13 @@ INFO:Tweet posted: 👀 Recorte de propaganda comercial de la bebida Pepsi-Cola,
 
 INFO:Not posted: 59, posted: 3
 INFO:Updated JSON file saved.
+INFO:2025-05-17 18:19:03
+ERROR:Locale 'es_ES.UTF-8' not available. Using default locale.
+INFO:Downloading image from Cloud
+INFO:Image uploaded: 1923805480805122048
+INFO:Tweet posted: 📸 Portada de la tesis de licenciatura del estudiante Jose Raul Mulino, titulada: El salario en la legislación laboral panameña.
+📅 Publicado el 1 de octubre de 1982
+🖋️ Fuente: Biblioteca Nacional de Panamá
+
+INFO:Not posted: 58, posted: 4
+INFO:Updated JSON file saved.
