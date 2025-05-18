@@ -77,3 +77,13 @@ INFO:Tweet posted: 📸 Portada de la tesis de licenciatura del estudiante Jose 
 
 INFO:Not posted: 58, posted: 4
 INFO:Updated JSON file saved.
+INFO:2025-05-18 18:19:06
+ERROR:Locale 'es_ES.UTF-8' not available. Using default locale.
+INFO:Downloading image from Cloud
+INFO:Image uploaded: 1924167880272134145
+INFO:Tweet posted: 📸 Servicios fúnebres en páginas del semanario quincenal: El Obrero, el Órgano de Propaganda y Orientación de la Federación Obrera de la República de Panamá.
+📅 Publicado el 25 de febrero de 1922
+⛲️ Fuente: Biblioteca Nacional de Panamá
+
+INFO:Not posted: 57, posted: 5
+INFO:Updated JSON file saved.
