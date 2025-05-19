@@ -3,39 +3,44 @@
         "id": "010-2025",
         "date": "2025-05-13T18:00:00",
         "text": "Diario Aprendo. Promoci\u00f3n a p\u00e1gina completa de la tienda de ropa Dant\u00e9.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993368/Hemeroteca_bot/Aprendo_26_Dic_1999-9.26.29_PM_ybwm4k.png",
+        "image": "v1746993368/Hemeroteca_bot/Aprendo_26_Dic_1999-9.26.29_PM_ybwm4k.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": true
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993606/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.11_PM_gcx5s4.png",
+        "image": "v1746993606/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.11_PM_gcx5s4.png",
         "id": "032-2025",
         "date": "2025-05-14T18:00:00",
         "text": "Anuncio de la Caja del Seguro Social en la revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1963-09-07",
         "isPublished": true
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993580/Hemeroteca_bot/Avance_20_Dic_1949-8.02.53_PM_a3ruo1.png",
+        "image": "v1746993580/Hemeroteca_bot/Avance_20_Dic_1949-8.02.53_PM_a3ruo1.png",
         "id": "016-2025",
         "date": "2025-05-16T18:00:00",
         "text": "Recorte de propaganda comercial de la bebida Pepsi-Cola, del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": true
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
+        "image": "v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
         "id": "059-2025",
         "date": "2025-05-17T18:00:00",
         "text": "Portada de la tesis de licenciatura del estudiante Jose Raul Mulino, titulada: El salario en la legislaci\u00f3n laboral paname\u00f1a.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1982-10-01",
         "isPublished": true
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993640/Hemeroteca_bot/El_obrero_25-Feb-1922-7.54.00_PM_daihsq.png",
+        "image": "v1746993640/Hemeroteca_bot/El_obrero_25-Feb-1922-7.54.00_PM_daihsq.png",
         "id": "023-2025",
         "date": "2025-05-18T18:00:00",
         "text": "Servicios f\u00fanebres en p\u00e1ginas del semanario quincenal: El Obrero, el \u00d3rgano de Propaganda y Orientaci\u00f3n de la Federaci\u00f3n Obrera de la Rep\u00fablica de Panam\u00e1.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1922-02-25",
         "isPublished": true
     },
@@ -43,103 +48,116 @@
         "id": "005-2025",
         "date": "2025-05-19T18:00:00",
         "text": "Diario Aprendo. Promoci\u00f3n de juegos de mesa, para las vacaciones del a\u00f1o 2000, a p\u00e1gina completa.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993353/Hemeroteca_bot/Aprendo_02_Ene_2000-9.36.13_PM_hylwgq.png",
+        "image": "v1746993353/Hemeroteca_bot/Aprendo_02_Ene_2000-9.36.13_PM_hylwgq.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "2000-01-02",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993468/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.41.00_PM_bid5mc.png",
+        "image": "v1746993468/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.41.00_PM_bid5mc.png",
         "id": "042-2025",
         "date": "2025-05-20T18:00:00",
         "text": "Anuncio de salidas de los barcos desde Colon hacia distintas partes del mundo en una pagina del diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1912-08-14",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993614/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.00_PM_pikzj3.png",
+        "image": "v1746993614/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.00_PM_pikzj3.png",
         "id": "031-2025",
         "date": "2025-05-21T18:00:00",
         "text": "Anuncios comerciales en la revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1963-09-07",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993334/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.27_PM_j1xjjs.png",
+        "image": "v1746993334/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.27_PM_j1xjjs.png",
         "id": "026-2025",
         "date": "2025-05-22T18:00:00",
         "text": "Anuncio del refresco Orange Crush en la revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993458/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.37.59_PM_nr8dah.png",
+        "image": "v1746993458/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.37.59_PM_nr8dah.png",
         "id": "034-2025",
         "date": "2025-05-23T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1912-08-14",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993506/Hemeroteca_bot/La_prensa_ilustrada_27_Jun_1940_yivybu.png",
+        "image": "v1746993506/Hemeroteca_bot/La_prensa_ilustrada_27_Jun_1940_yivybu.png",
         "id": "044-2025",
         "date": "2025-05-24T18:00:00",
         "text": "Anuncio del Banco Nacional en el semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1940-06-27",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993338/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.13_PM_bjclse.png",
+        "image": "v1746993338/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.13_PM_bjclse.png",
         "id": "025-2025",
         "date": "2025-05-25T18:00:00",
         "text": "Anuncio de una cantina en La Chorrera, en la revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993425/Hemeroteca_bot/panama_nuevo_jun-jul_19728.54.46_PM_eip7sy.png",
+        "image": "v1746993425/Hemeroteca_bot/panama_nuevo_jun-jul_19728.54.46_PM_eip7sy.png",
         "id": "054-2025",
         "date": "2025-05-26T18:00:00",
         "text": "Propaganda estatal con el tema de la Reforma Agraria, impulsada en los 70s en la revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1972-06-01",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993341/Hemeroteca_bot/El_paladin_03_Ene_1947-9.52.54_PM_cl5n9e.png",
+        "image": "v1746993341/Hemeroteca_bot/El_paladin_03_Ene_1947-9.52.54_PM_cl5n9e.png",
         "id": "024-2025",
         "date": "2025-05-27T18:00:00",
         "text": "Anuncio del Club Tierra Feliz en la revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993416/Hemeroteca_bot/panama_nuevo_jun-jul_19728.56.35_PM_iskex1.png",
+        "image": "v1746993416/Hemeroteca_bot/panama_nuevo_jun-jul_19728.56.35_PM_iskex1.png",
         "id": "056-2025",
         "date": "2025-05-28T18:00:00",
         "text": "Anuncio de un viaje en crucero, en la Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1972-06-01",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993597/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.20_PM_yftglt.png",
+        "image": "v1746993597/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.57.20_PM_yftglt.png",
         "id": "033-2025",
         "date": "2025-05-29T18:00:00",
         "text": "Anuncio de la Tercera feria de Azuero en la revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1963-09-07",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993492/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.35_PM_kwkiwf.png",
+        "image": "v1746993492/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.35_PM_kwkiwf.png",
         "id": "036-2025",
         "date": "2025-05-30T18:00:00",
         "text": "Anuncio de la Farmacia El Canal, en la fecha de inauguraci\u00f3n del Canal de Panam\u00e1, en el diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1912-08-14",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993528/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.15_PM_gcgtfx.png",
+        "image": "v1746993528/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.15_PM_gcgtfx.png",
         "id": "046-2025",
         "date": "2025-05-31T18:00:00",
         "text": "1938. Anuncios clasificados en el semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1938-07-28",
         "isPublished": false
     },
@@ -147,7 +165,8 @@
         "id": "013-2025",
         "date": "2025-06-01T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'Pasa el dato' con datos interesantes y las paname\u00f1adas.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993376/Hemeroteca_bot/Aprendo_26_Dic_1999-9.31.47_PM_yoa9if.png",
+        "image": "v1746993376/Hemeroteca_bot/Aprendo_26_Dic_1999-9.31.47_PM_yoa9if.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
@@ -155,7 +174,8 @@
         "id": "009-2025",
         "date": "2025-06-02T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993364/Hemeroteca_bot/Aprendo_26_Dic_1999-9.26.07_PM_cl2mzj.png",
+        "image": "v1746993364/Hemeroteca_bot/Aprendo_26_Dic_1999-9.26.07_PM_cl2mzj.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
@@ -163,23 +183,26 @@
         "id": "002-2025",
         "date": "2025-06-03T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: de juegos, con motivos escolares, enmarcado por propaganda comercial.",
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993392/Hemeroteca_bot/Aprendo_8_Mar_1998-9.22.16_PM_egjftt.png",
+        "image": "v1746993392/Hemeroteca_bot/Aprendo_8_Mar_1998-9.22.16_PM_egjftt.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1998-03-08",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993485/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.39.16_PM_ty5u1p.png",
+        "image": "v1746993485/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.39.16_PM_ty5u1p.png",
         "id": "038-2025",
         "date": "2025-06-04T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993657/Hemeroteca_bot/El_obrero_25-Feb-1922-7.52.45_PM_qxvwfn.png",
+        "image": "v1746993657/Hemeroteca_bot/El_obrero_25-Feb-1922-7.52.45_PM_qxvwfn.png",
         "id": "021-2025",
         "date": "2025-06-05T18:00:00",
         "text": "Bordadora ofrece sus servicios en una de las p\u00e1ginas del semanario quincenal: El Obrero, el \u00d3rgano de Propaganda y Orientaci\u00f3n de la Federaci\u00f3n Obrera de la Rep\u00fablica de Panam\u00e1.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1922-02-25",
         "isPublished": false
     },
@@ -187,47 +210,53 @@
         "id": "008-2025",
         "date": "2025-06-06T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993380/Hemeroteca_bot/Aprendo_26_Dic_1999-9.25.54_PM_a7lsez.png",
+        "image": "v1746993380/Hemeroteca_bot/Aprendo_26_Dic_1999-9.25.54_PM_a7lsez.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993480/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.39.41_PM_cojtkl.png",
+        "image": "v1746993480/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.39.41_PM_cojtkl.png",
         "id": "039-2025",
         "date": "2025-06-07T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993331/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.42_PM_uxbxvk.png",
+        "image": "v1746993331/Hemeroteca_bot/El_paladin_03_Ene_1947-9.53.42_PM_uxbxvk.png",
         "id": "027-2025",
         "date": "2025-06-08T18:00:00",
         "text": "revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993408/Hemeroteca_bot/tesis_mulino_1982_conclusion_xrs8kl.png",
+        "image": "v1746993408/Hemeroteca_bot/tesis_mulino_1982_conclusion_xrs8kl.png",
         "id": "058-2025",
         "date": "2025-06-09T18:00:00",
         "text": "",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993511/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.48_PM_qrttiq.png",
+        "image": "v1746993511/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.48_PM_qrttiq.png",
         "id": "048-2025",
         "date": "2025-06-10T18:00:00",
         "text": "semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993472/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.40.36_PM_nnbvi8.png",
+        "image": "v1746993472/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.40.36_PM_nnbvi8.png",
         "id": "041-2025",
         "date": "2025-06-11T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
@@ -235,23 +264,26 @@
         "id": "012-2025",
         "date": "2025-06-12T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'Bla-bla-bla' con comentarios y fotos de lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993388/Hemeroteca_bot/Aprendo_26_Dic_1999-9.31.02_PM_jxnb8d.png",
+        "image": "v1746993388/Hemeroteca_bot/Aprendo_26_Dic_1999-9.31.02_PM_jxnb8d.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993571/Hemeroteca_bot/Avance_20_Dic_1949-8.03.13_PM_h2iitu.png",
+        "image": "v1746993571/Hemeroteca_bot/Avance_20_Dic_1949-8.03.13_PM_h2iitu.png",
         "id": "017-2025",
         "date": "2025-06-13T18:00:00",
         "text": "Recorte de propaganda comercial del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993437/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.39_PM_cbkldb.png",
+        "image": "v1746993437/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.39_PM_cbkldb.png",
         "id": "051-2025",
         "date": "2025-06-14T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
@@ -259,23 +291,26 @@
         "id": "004-2025",
         "date": "2025-06-15T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993357/Hemeroteca_bot/Aprendo_02_Ene_2000-9.35.48_PM_zluxpt.png",
+        "image": "v1746993357/Hemeroteca_bot/Aprendo_02_Ene_2000-9.35.48_PM_zluxpt.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "2000-01-02",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993631/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.56.03_PM_ejnt7j.png",
+        "image": "v1746993631/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.56.03_PM_ejnt7j.png",
         "id": "029-2025",
         "date": "2025-06-16T18:00:00",
         "text": " revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993433/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.53_PM_oqiuyn.png",
+        "image": "v1746993433/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.53_PM_oqiuyn.png",
         "id": "052-2025",
         "date": "2025-06-18T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
@@ -283,15 +318,17 @@
         "id": "014-2025",
         "date": "2025-06-19T18:00:00",
         "text": "Diario Aprendo. Comercial a p\u00e1gina completa de la programaci\u00f3n de las tardes de TVN.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993384/Hemeroteca_bot/Aprendo_26_Dic_1999-9.32.07_PM_pmoe3f.png",
+        "image": "v1746993384/Hemeroteca_bot/Aprendo_26_Dic_1999-9.32.07_PM_pmoe3f.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993562/Hemeroteca_bot/Avance_20_Dic_1949-8.03.27_PM_uwh8j2.png",
+        "image": "v1746993562/Hemeroteca_bot/Avance_20_Dic_1949-8.03.27_PM_uwh8j2.png",
         "id": "018-2025",
         "date": "2025-06-20T18:00:00",
         "text": "Recorte de propaganda comercial del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": false
     },
@@ -299,55 +336,62 @@
         "id": "000-2025",
         "date": "2025-06-21T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: de juegos, con motivos escolares, enmarcado por propaganda comercial.",
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993400/Hemeroteca_bot/Aprendo_8_Mar_1998-9.21.29_PM_b15nmt.png",
+        "image": "v1746993400/Hemeroteca_bot/Aprendo_8_Mar_1998-9.21.29_PM_b15nmt.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1998-03-08",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993498/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.19_PM_h1yydf.png",
+        "image": "v1746993498/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.19_PM_h1yydf.png",
         "id": "035-2025",
         "date": "2025-06-22T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993441/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.15_PM_jwowg7.png",
+        "image": "v1746993441/Hemeroteca_bot/panama_nuevo_jun-jul_19728.52.15_PM_jwowg7.png",
         "id": "050-2025",
         "date": "2025-06-23T18:00:00",
         "text": "Gr\u00e1fico del empleo por sector a p\u00e1gina completa en la revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1972-06-01",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993420/Hemeroteca_bot/panama_nuevo_jun-jul_19728.56.25_PM_vx3pri.png",
+        "image": "v1746993420/Hemeroteca_bot/panama_nuevo_jun-jul_19728.56.25_PM_vx3pri.png",
         "id": "055-2025",
         "date": "2025-06-24T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
+        "image": "v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
         "id": "060-2025",
         "date": "2025-06-25T18:00:00",
         "text": "Test",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993554/Hemeroteca_bot/Avance_20_Dic_1949-8.03.36_PM_stpjcs.png",
+        "image": "v1746993554/Hemeroteca_bot/Avance_20_Dic_1949-8.03.36_PM_stpjcs.png",
         "id": "019-2025",
         "date": "2025-06-26T18:00:00",
         "text": "Recorte de propaganda comercial del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993429/Hemeroteca_bot/panama_nuevo_jun-jul_19728.54.33_PM_dtl4ci.png",
+        "image": "v1746993429/Hemeroteca_bot/panama_nuevo_jun-jul_19728.54.33_PM_dtl4ci.png",
         "id": "053-2025",
         "date": "2025-06-27T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
@@ -355,39 +399,44 @@
         "id": "006-2025",
         "date": "2025-06-28T18:00:00",
         "text": "Diario Aprendo. Gran estreno de la pel\u00edcula Pokemon, el 7 de enero de 2000.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993349/Hemeroteca_bot/Aprendo_02_Ene_2000-9.47.07_PM_ubc03i.png",
+        "image": "v1746993349/Hemeroteca_bot/Aprendo_02_Ene_2000-9.47.07_PM_ubc03i.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "2000-01-02",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
+        "image": "v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
         "id": "060-2025",
         "date": "2025-06-29T18:00:00",
         "text": "Test",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993623/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.56.36_PM_ohjruy.png",
+        "image": "v1746993623/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.56.36_PM_ohjruy.png",
         "id": "030-2025",
         "date": "2025-06-30T18:00:00",
         "text": " revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993488/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.53_PM_ikgmce.png",
+        "image": "v1746993488/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.38.53_PM_ikgmce.png",
         "id": "037-2025",
         "date": "2025-07-01T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993519/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.30_PM_cyzijy.png",
+        "image": "v1746993519/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.34.30_PM_cyzijy.png",
         "id": "047-2025",
         "date": "2025-07-02T18:00:00",
         "text": "semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
@@ -395,47 +444,53 @@
         "id": "001-2025",
         "date": "2025-07-03T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993396/Hemeroteca_bot/Aprendo_8_Mar_1998-9.22.04_PM_ruzoci.png",
+        "image": "v1746993396/Hemeroteca_bot/Aprendo_8_Mar_1998-9.22.04_PM_ruzoci.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1998-03-08",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993464/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.41.38_PM_pgnaeh.png",
+        "image": "v1746993464/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.41.38_PM_pgnaeh.png",
         "id": "043-2025",
         "date": "2025-07-04T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993445/Hemeroteca_bot/panama_nuevo_jun-jul_19728.51.48_PM_ubhi2h.png",
+        "image": "v1746993445/Hemeroteca_bot/panama_nuevo_jun-jul_19728.51.48_PM_ubhi2h.png",
         "id": "049-2025",
         "date": "2025-07-05T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993537/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.33.46_PM_whvvh1.png",
+        "image": "v1746993537/Hemeroteca_bot/La_prensa_ilustrada_28_Jul_1938-8.33.46_PM_whvvh1.png",
         "id": "045-2025",
         "date": "2025-07-06T18:00:00",
         "text": "semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993412/Hemeroteca_bot/panama_nuevo_jun-jul_19728.58.18_PM_t4hrv9.png",
+        "image": "v1746993412/Hemeroteca_bot/panama_nuevo_jun-jul_19728.58.18_PM_t4hrv9.png",
         "id": "057-2025",
         "date": "2025-07-07T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993649/Hemeroteca_bot/El_obrero_25-Feb-1922-7.53.49_PM_q6xanj.png",
+        "image": "v1746993649/Hemeroteca_bot/El_obrero_25-Feb-1922-7.53.49_PM_q6xanj.png",
         "id": "022-2025",
         "date": "2025-07-08T18:00:00",
         "text": "Servicios de sombrereria ofrecidos en Ciudad de Panama en las p\u00e1ginas del semanario quincenal: El Obrero, el \u00d3rgano de Propaganda y Orientaci\u00f3n de la Federaci\u00f3n Obrera de la Rep\u00fablica de Panam\u00e1.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1922-02-25",
         "isPublished": false
     },
@@ -443,7 +498,8 @@
         "id": "011-2025",
         "date": "2025-07-09T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'El recreo', con chistes, adivinanzas y trabalenguas.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993372/Hemeroteca_bot/Aprendo_26_Dic_1999-9.27.27_PM_zmqnpv.png",
+        "image": "v1746993372/Hemeroteca_bot/Aprendo_26_Dic_1999-9.27.27_PM_zmqnpv.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1999-12-26",
         "isPublished": false
     },
@@ -451,15 +507,17 @@
         "id": "015-2025",
         "date": "2025-07-10T18:00:00",
         "text": "Recorte de propaganda comercial del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": false,
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993588/Hemeroteca_bot/Avance_20_Dic_1949-8.00.49_PM_esem90.png"
+        "image": "v1746993588/Hemeroteca_bot/Avance_20_Dic_1949-8.00.49_PM_esem90.png"
     },
     {
         "id": "007-2025",
         "date": "2025-07-11T18:00:00",
         "text": "Diario Aprendo. Ultima pagina de la revista aprendo, con el personaje que mas adelantes ser\u00e1 el habitual.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993345/Hemeroteca_bot/Aprendo_02_Ene_2000-9.47.22_PM_r560rz.png",
+        "image": "v1746993345/Hemeroteca_bot/Aprendo_02_Ene_2000-9.47.22_PM_r560rz.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "2000-01-02",
         "isPublished": false
     },
@@ -467,31 +525,35 @@
         "id": "003-2025",
         "date": "2025-07-12T18:00:00",
         "text": "Diario Aprendo. Secci\u00f3n: 'La Galer\u00eda' que publicaba dibujos de los lectores de la revista.",
-        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993360/Hemeroteca_bot/Aprendo_02_Ene_2000-9.35.33_PM_g1hcgp.png",
+        "image": "v1746993360/Hemeroteca_bot/Aprendo_02_Ene_2000-9.35.33_PM_g1hcgp.png",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "2000-01-02",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993476/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.40.21_PM_ffd6on.png",
+        "image": "v1746993476/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.40.21_PM_ffd6on.png",
         "id": "040-2025",
         "date": "2025-07-13T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993328/Hemeroteca_bot/El_paladin_03_Ene_1947-9.54.16_PM_ka3wkh.png",
+        "image": "v1746993328/Hemeroteca_bot/El_paladin_03_Ene_1947-9.54.16_PM_ka3wkh.png",
         "id": "028-2025",
         "date": "2025-07-14T18:00:00",
         "text": "revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": false
     },
     {
-        "image": "http://res.cloudinary.com/dcvnw6hvt/image/upload/v1746993545/Hemeroteca_bot/Avance_20_Dic_1949-8.04.24_PM_jdpg0s.png",
+        "image": "v1746993545/Hemeroteca_bot/Avance_20_Dic_1949-8.04.24_PM_jdpg0s.png",
         "id": "020-2025",
         "date": "2025-07-15T18:00:00",
         "text": "Carteleras de los Teatros Lux, Cecilia y Presidente en el semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
         "isPublished": false
     }

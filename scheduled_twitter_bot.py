@@ -21,7 +21,7 @@ logging.basicConfig(
     level=logging.INFO,
 )
 today = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-logging.info(today)
+logging.info(f"\n***** ***** ***** {today} ***** ***** *****")
 # from apscheduler.schedulers.blocking import BlockingScheduler
 
 # Cloudinary libraries for uploading/getting images
@@ -33,11 +33,12 @@ try:
     locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
 except locale.Error:
     # Fallback: use the default locale or log a warning
-    logging.error("Locale 'es_ES.UTF-8' not available. Using default locale.")
+    # logging.error("Locale 'es_ES.UTF-8' not available. Using default locale.")
     pass
 
 # Load environment variables from .env file
 load_dotenv()
+IMAGE_URL = os.getenv("CLOUDINARY_BASE_URL")
 
 
 # Get credentials with error handling
@@ -111,9 +112,9 @@ def GetFolderFiles():
 
 # Lista de emojis relevantes para contenido histórico/archivístico
 EMOJIS = {
-    "opener": ["📰", "📜", "🎞️", "🧳", "🗞️", "🔍", "📸", "🏛️", "👀"],
+    "opener": ["📰", "📜", "🎞️", "🧳", "🗞️", "🔍", "📸", "🏛️", "👀", "💾"],
     "items": ["✨", "🌟", "🔹", "🎯", "🔖", "📌", "🌀"],
-    "publicado": ["📅", "🗓️", "🕰️"],
+    "publicado": ["📅", "🗓️", "🕰️", "⌛️"],
     "fuente": ["📚", "🏷️", "🗃️", "🖋️", "🌴", "⛲️"],
 }
 
@@ -126,7 +127,7 @@ def generar_tweet(tweet_data, formatted_date):
     emoji_fuente = random.choice(EMOJIS["fuente"])
 
     # Formatear fecha
-    if tweet_data["published"]:
+    if formatted_date != "No date":
         fecha_str = f"{emoji_publicado} Publicado el {formatted_date}\n"
     else:
         fecha_str = f"{emoji_item} Hace un tiempo\n"
@@ -135,13 +136,13 @@ def generar_tweet(tweet_data, formatted_date):
     if tweet_data["text"] != "":
         texto_principal = f"{emoji_opener} {tweet_data['text']}\n"
     else:
-        texto_principal = f"{emoji_opener}Archivo de hemeroteca.\n"
+        texto_principal = f"{emoji_opener} Archivo de hemeroteca.\n"
 
     # Construir tweet completo
     tweet_text = (
         f"{texto_principal}"
         f"{fecha_str}"
-        f"{emoji_fuente} Fuente: Biblioteca Nacional de Panamá\n"
+        f"{emoji_fuente} Fuente: {tweet_data["source"]}\n"
     )
 
     # Añadir hashtags aleatorios (opcional)
@@ -181,8 +182,8 @@ def post_scheduled_tweets():
         if scheduled_time.date() == now.date():
             # and not tweet.get("isPublished", False):
             # Download the image from Cloudinary
-            image_url = tweet["image"]
-            logging.info(f"Downloading image from Cloud")  # {image_url}
+            image_url = IMAGE_URL + tweet["image"]
+            logging.info(f"Downloading image from Cloud..")
             image_response = requests.get(image_url)
             image_path = f"{os.path.dirname(__file__)}/temp_image.jpg"
             with open(image_path, "wb") as img_file:
@@ -190,7 +191,12 @@ def post_scheduled_tweets():
 
             # Upload the image to Twitter
             media = api.media_upload(image_path)
-            logging.info(f"Image uploaded: {media.media_id}")
+            if media.media_id:
+                logging.info("✅ Image uploaded successfully.")
+            else:
+                logging.error("❌ Failed to upload image.")
+                continue
+
             # Post the tweet with the image and text
             if tweet["published"] != "":
                 # Format dates in Spanish
@@ -198,6 +204,8 @@ def post_scheduled_tweets():
                 formatted_date = format_date(
                     published_date, "d 'de' MMMM 'de' yyyy", locale="es"
                 )
+            else:
+                formatted_date = "No date"
 
             tweet_text = generar_tweet(tweet, formatted_date)
             client.create_tweet(text=tweet_text, media_ids=[media.media_id])
@@ -209,17 +217,18 @@ def post_scheduled_tweets():
             not_posted += 1
         if tweet["isPublished"] == True:
             posted += 1
-    logging.info(f"Not posted: {not_posted}, posted: {posted}")
+    logging.info(f"💾 Not posted: {not_posted}, posted: {posted}")
     # Save the updated JSON file
     with open(json_path, "w") as f:
         json.dump(tweets, f, indent=4)
-        logging.info("Updated JSON file saved.")
+        logging.info("✅ Updated JSON file saved.")
 
 
+# # At the end Scheduler is not applied because Github Actions does the job.
 # Scheduler to run the function once every 24 hours
 # scheduler = BlockingScheduler()
 # scheduler.add_job(post_scheduled_tweets, "interval", seconds=10)
 # scheduler.start()
 
-# ConnectToCloudinary()
+# ConnectToCloudinary() # Commented because we take the URL from json.
 post_scheduled_tweets()
