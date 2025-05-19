@@ -30,6 +30,7 @@ jobs:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          CLOUDINARY_BASE_URL: ${{ secrets.CLOUDINARY_BASE_URL }}
         run: python scheduled_twitter_bot.py # main script name
       - name: Commit and push changes
         if: success() # Only run if the previous step was successful
