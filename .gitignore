@@ -1,2 +1,7 @@
 .env
 .DS_Store
+Pipfile
+Pipfile.lock
+
+temp_image.jpg
+images/
