@@ -70,7 +70,8 @@ def SetDatesToJSON():
 
 def CheckIfRepeatedDates():
     # Open and load the JSON file
-    with open("data.json", "r") as openfile:
+    json_path = os.path.join(os.path.dirname(__file__), "data.json")
+    with open(json_path, "r") as openfile:
         json_object = json.load(openfile)
     print("\n\nCheck if repeated:")
     seen_dates = set()
@@ -92,7 +93,7 @@ def CheckIfRepeatedDates():
 
 def CheckAndSortDates():
     # Open and load the JSON file
-    json_path = "data.json"
+    json_path = os.path.join(os.path.dirname(__file__), "data.json")
     with open(json_path, "r") as openfile:
         json_object = json.load(openfile)
 
@@ -127,6 +128,6 @@ def CheckAndSortDates():
 # Call the function
 
 
-SetDatesToJSON()
+# SetDatesToJSON()
 CheckIfRepeatedDates()
-CheckAndSortDates()
+# CheckAndSortDates()
