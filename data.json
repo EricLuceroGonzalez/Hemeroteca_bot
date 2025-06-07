@@ -194,7 +194,7 @@
         "date": "2025-06-04T18:00:00",
         "text": "Tienda de licores Canavaggio en Col\u00f3n. Diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": true
     },
     {
@@ -221,7 +221,7 @@
         "date": "2025-06-07T18:00:00",
         "text": "Anuncio de un Bar, en la ciudad de Col\u00f3n. Diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
@@ -239,7 +239,7 @@
         "date": "2025-06-09T18:00:00",
         "text": "Conclusi\u00f3 n de la tesis del actual presidente de Panam\u00e1 , sobre el tema de los salarios.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1982-10-01",
         "isPublished": false
     },
     {
@@ -248,7 +248,7 @@
         "date": "2025-06-10T18:00:00",
         "text": "Anuncio de remedio milagroso en el semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1938-07-28",
         "isPublished": false
     },
     {
@@ -257,7 +257,7 @@
         "date": "2025-06-11T18:00:00",
         "text": "United Fruit Company anunciando los viajes de su l\u00ednea de cruceros. Diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
@@ -284,7 +284,7 @@
         "date": "2025-06-14T18:00:00",
         "text": "Anuncio del sorteo extraordinario de la Loter\u00eda Nacional, en la Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
@@ -302,7 +302,7 @@
         "date": "2025-06-16T18:00:00",
         "text": "Anuncios variados en las p\u00e1ginas de la revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1963-09-07",
         "isPublished": false
     },
     {
@@ -311,7 +311,7 @@
         "date": "2025-06-18T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
@@ -347,7 +347,7 @@
         "date": "2025-06-22T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
@@ -365,22 +365,13 @@
         "date": "2025-06-24T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
-        "isPublished": false
-    },
-    {
-        "image": "v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
-        "id": "060-2025",
-        "date": "2025-06-25T18:00:00",
-        "text": "Test",
-        "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
         "image": "v1746993554/Hemeroteca_bot/Avance_20_Dic_1949-8.03.36_PM_stpjcs.png",
         "id": "019-2025",
-        "date": "2025-06-26T18:00:00",
+        "date": "2025-06-25T18:00:00",
         "text": "Recorte de propaganda comercial del semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
         "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
@@ -389,15 +380,15 @@
     {
         "image": "v1746993429/Hemeroteca_bot/panama_nuevo_jun-jul_19728.54.33_PM_dtl4ci.png",
         "id": "053-2025",
-        "date": "2025-06-27T18:00:00",
+        "date": "2025-06-26T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
         "id": "006-2025",
-        "date": "2025-06-28T18:00:00",
+        "date": "2025-06-27T18:00:00",
         "text": "Diario Aprendo. Gran estreno de la pel\u00edcula Pokemon, el 7 de enero de 2000.",
         "image": "v1746993349/Hemeroteca_bot/Aprendo_02_Ene_2000-9.47.07_PM_ubc03i.png",
         "source": "Biblioteca Nacional de Panam\u00e1",
@@ -405,21 +396,12 @@
         "isPublished": false
     },
     {
-        "image": "v1746993404/Hemeroteca_bot/tesis_mulino_1982_kmj7ub.png",
-        "id": "060-2025",
-        "date": "2025-06-29T18:00:00",
-        "text": "Test",
-        "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
-        "isPublished": false
-    },
-    {
         "image": "v1746993623/Hemeroteca_bot/El_sol_de_azuero-7-Sep-1963-7.56.36_PM_ohjruy.png",
         "id": "030-2025",
-        "date": "2025-06-30T18:00:00",
+        "date": "2025-06-28T18:00:00",
         "text": " revista quincenal El Sol de Azuero, editada en la ciudad de Chitr\u00e9, Herrera. Editora: Impresora Panam\u00e1, 1962-1967.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1963-09-07",
         "isPublished": false
     },
     {
@@ -428,7 +410,7 @@
         "date": "2025-07-01T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
@@ -437,7 +419,7 @@
         "date": "2025-07-02T18:00:00",
         "text": "semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1938-07-28",
         "isPublished": false
     },
     {
@@ -455,7 +437,7 @@
         "date": "2025-07-04T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
@@ -464,7 +446,7 @@
         "date": "2025-07-05T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
@@ -473,7 +455,7 @@
         "date": "2025-07-06T18:00:00",
         "text": "semanario liberal: La prensa Ilustrada. Director: M. De J. Quijano. Editoral La Moderna.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1938-07-28",
         "isPublished": false
     },
     {
@@ -482,7 +464,7 @@
         "date": "2025-07-07T18:00:00",
         "text": "Revista mensual Panam\u00e1 nuevo, Jun-Jul. Editora: El Arte Tipogr\u00e1fico.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1972-06-01",
         "isPublished": false
     },
     {
@@ -536,7 +518,7 @@
         "date": "2025-07-13T18:00:00",
         "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
-        "published": "",
+        "published": "1912-08-14",
         "isPublished": false
     },
     {
