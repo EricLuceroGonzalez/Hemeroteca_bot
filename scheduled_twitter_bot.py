@@ -214,11 +214,11 @@ def post_scheduled_tweets():
 
             # Remove the temporary image file# logging.debug(f"Scheduled time: {scheduled_time}")
             # Remove the temporary image file
-        if os.path.exists(image_path):
-            os.remove(image_path)
-            logging.info(f"Temporary image file removed.")
-        else:
-            logging.warning(f"Temporary image file does not exist.")
+            if os.path.exists(image_path):
+                os.remove(image_path)
+                logging.info(f"Temporary image file removed.")
+            else:
+                logging.warning(f"Temporary image file does not exist.")
         if tweet["isPublished"] == False:
             not_posted += 1
         if tweet["isPublished"] == True:
