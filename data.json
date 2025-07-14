@@ -516,7 +516,7 @@
         "image": "v1746993476/Hemeroteca_bot/el_tiempo_14_Ago_1912-8.40.21_PM_ffd6on.png",
         "id": "040-2025",
         "date": "2025-07-13T18:00:00",
-        "text": "diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
+        "text": "Anuncions varios en el diario El Tiempo, comercial, noticioso y de variedades. Director: Rafael de la Espriella.",
         "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1912-08-14",
         "isPublished": true
@@ -525,7 +525,7 @@
         "image": "v1746993328/Hemeroteca_bot/El_paladin_03_Ene_1947-9.54.16_PM_ka3wkh.png",
         "id": "028-2025",
         "date": "2025-07-14T18:00:00",
-        "text": "revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
+        "text": "Glosa de 1947, en la revista quincenal El Palad\u00edn, editado por Imprenta La Naci\u00f3n, 1946-1947.",
         "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1947-01-03",
         "isPublished": true
@@ -533,10 +533,388 @@
     {
         "image": "v1746993545/Hemeroteca_bot/Avance_20_Dic_1949-8.04.24_PM_jdpg0s.png",
         "id": "020-2025",
-        "date": "2025-07-15T18:00:00",
+        "date": "2025-07-29T18:00:00",
         "text": "Carteleras de los Teatros Lux, Cecilia y Presidente en el semanario popular: Avance. Editado por: Imprenta de La Academia, 1949-1949.",
         "source": "Biblioteca Nacional de Panam\u00e1",
         "published": "1949-12-20",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376779/Hemeroteca_bot/1927-8-30_-FSTP-SINDICALISMO-1_w0vi9r.png",
+        "id": "061-2025",
+        "date": "2025-08-31T18:00:00",
+        "text": "Anuncio de la bebida hecha con naranjas locales en el diario Sindicalismo : del \u00f3rgano de la Federaci\u00f3n Sindical de Trabajadores de Panam\u00e1.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1927-08-30",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376779/Hemeroteca_bot/1927-8-30_-FSTP-SINDICALISMO-2_pc0r2g.png",
+        "id": "062-2025",
+        "date": "2025-08-11T18:00:00",
+        "text": "Anunciando el Seguro Social Obligatorio en el diario Sindicalismo : del \u00f3rgano de la Federaci\u00f3n Sindical de Trabajadores de Panam\u00e1.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1927-08-30",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376779/Hemeroteca_bot/1928-3-20_-_El-Pais_d2dgts.png",
+        "id": "063-2025",
+        "date": "2025-08-30T18:00:00",
+        "text": "Anuncio de los premios de la Loter\u00eda Nacional de Beneficencia, en el diario semanal El Pa\u00eds, del comit\u00e9 Pro Arosemena, director: Tertuliano Martinez",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1928-03-20",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376763/Hemeroteca_bot/1953-11-2_-_El-Pais_2_ciwu8t.png",
+        "id": "064-2025",
+        "date": "2025-08-05T18:00:00",
+        "text": "Mensaje de felicitaciones en el 50 aniversario de la Rep\u00fablica de la Union Oil Company, en el diario semanal El Pa\u00eds: por la Rep\u00fablica, la ley y la justicia. Director: Samuel Lewis.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1953-11-2",
+        "isPublished": false
+    },
+    {
+        "image": "https://res.cloudinary.com/dcvnw6hvt/image/upload/v1752376758/Hemeroteca_bot/1953-11-2_-_El-Pais_3_vulfyr.png",
+        "id": "065-2025",
+        "date": "2025-08-25T18:00:00",
+        "text": "Felicitaciones a p\u00e1gina completa de la compa\u00f1\u00eda paname\u00f1a de fuerza y luz en el diario semanal El Pa\u00eds: por la Rep\u00fablica, la ley y la justicia. Director: Samuel Lewis.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1953-11-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376755/Hemeroteca_bot/1953-11-2_-_El-Pais_4_efov4w.png",
+        "id": "",
+        "date": "2025-07-28T18:00:00",
+        "text": "P\u00e1gina completa en el 50 aniversario de la Rep\u00fablica de Panam\u00e1 , en el diario semanal El Pa\u00eds: por la Rep\u00fablica, la ley y la justicia. Director: Samuel Lewis.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1953-11-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376754/Hemeroteca_bot/1953-11-2_-_El-Pais_5_vh62k1.png",
+        "id": "",
+        "date": "2025-08-10T18:00:00",
+        "text": "P\u00e1gina completa con datos de las importaciones de arroz, caf\u00e9 y ganado vacuno durante 1951, 1952 y 1953, en el diario semanal El Pa\u00eds: por la Rep\u00fablica, la ley y la justicia. Director: Samuel Lewis.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1953-11-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752376754/Hemeroteca_bot/1953-11-2_-_El-Pais_6_qrryzr.png",
+        "id": "",
+        "date": "2025-08-13T18:00:00",
+        "text": "P\u00e1gina completa en celebraci\u00f3n del 50 aniversario de la Rep\u00fablica de Panam\u00e1, en el diario semanal El Pa\u00eds: por la Rep\u00fablica, la ley y la justicia. Director: Samuel Lewis.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1953-11-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432583/Hemeroteca_bot/Don_Sancho_1912-07-02_tp1cva.png",
+        "id": "",
+        "date": "2025-07-26T18:00:00",
+        "text": "Encabezado del seminario sat\u00edrico, jocoso, pol\u00edtico y catapulta: Don Sancho.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1921-07-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432582/Hemeroteca_bot/6.11_Don_Sancho_1912-07-02_h6j0bo.png",
+        "id": "",
+        "date": "2025-07-20T18:00:00",
+        "text": "Caricatura de portada, donde aparece el presidente Belisario Porras en el seminario sat\u00edrico, jocoso, pol\u00edtico y catapulta: Don Sancho.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1921-07-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432574/Hemeroteca_bot/6.22_Don_Sancho_1912-07-02_lglty2.png",
+        "id": "",
+        "date": "2025-08-09T18:00:00",
+        "text": "Anuncio de la apertura del famoso Teatro Excelsior en el seminario sat\u00edrico, jocoso, pol\u00edtico y catapulta: Don Sancho.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1921-07-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432567/Hemeroteca_bot/7.03_Don_Sancho_1912-07-02_pp4fjt.png",
+        "id": "",
+        "date": "2025-08-27T18:00:00",
+        "text": "Condiciones para publicar en el seminario sat\u00edrico, jocoso, pol\u00edtico y catapulta: Don Sancho.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1921-07-2",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432562/Hemeroteca_bot/El_aji_1931-06-14__0_vsh9wx.png",
+        "id": "",
+        "date": "2025-08-02T18:00:00",
+        "text": "Encabezado de El Aj\u00ed, semanario cr\u00edtico humor\u00edstico de la vida nacional ",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1931-06-14",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432555/Hemeroteca_bot/El_aji_1931-06-14__1_jb517g.png",
+        "id": "",
+        "date": "2025-09-01T18:00:00",
+        "text": "Anuncio del sorteo de la loter\u00eda nacional de beneficencia en El Aj\u00ed, semanario cr\u00edtico humor\u00edstico de la vida nacional ",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1931-06-14",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432550/Hemeroteca_bot/El_aji_1931-06-14__2_tsiz0s.png",
+        "id": "",
+        "date": "2025-07-19T18:00:00",
+        "text": "Anuncios varios en El Aj\u00ed, semanario cr\u00edtico humor\u00edstico de la vida nacional ",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1931-06-14",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432544/Hemeroteca_bot/El_aji_1931-06-14__3_bjqnha.png",
+        "id": "",
+        "date": "2025-07-21T18:00:00",
+        "text": "Glosas de la d\u00e9cada del 30 en El Aj\u00ed, semanario cr\u00edtico humor\u00edstico de la vida nacional ",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1931-06-14",
+        "isPublished": false
+    },
+    {
+        "image": "v1752432538/Hemeroteca_bot/El_aji_1931-06-14__4_q3czke.png",
+        "id": "",
+        "date": "2025-08-26T18:00:00",
+        "text": "Glosas de la d\u00e9cada del 30 en El Aj\u00ed, semanario cr\u00edtico humor\u00edstico de la vida nacional ",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1931-06-14",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521840/Hemeroteca_bot/1911_01_01_El_agricultor_508_ejunif.png",
+        "id": "",
+        "date": "2025-08-03T18:00:00",
+        "text": "Recortes de un anuncio del doctor Gonz\u00e1lez Revilla en David Chiriqu\u00ed, en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521840/Hemeroteca_bot/1911_01_01_El_agricultor_530_lepfnj.png",
+        "id": "",
+        "date": "2025-07-25T18:00:00",
+        "text": "Recortes de anuncions varios en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521840/Hemeroteca_bot/1911_01_01_El_agricultor_559_acditl.png",
+        "id": "",
+        "date": "2025-07-15T18:00:00",
+        "text": "Columna de temas miscel\u00e1neos en el diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521838/Hemeroteca_bot/1911_01_01_El_agricultor_636_yv50kb.png",
+        "id": "",
+        "date": "2025-08-19T18:00:00",
+        "text": "Anuncio de inter\u00e9s general a los ciudadanos de David, en el diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521838/Hemeroteca_bot/1911_01_01_El_agricultor_709_v6gfkj.png",
+        "id": "",
+        "date": "2025-08-12T18:00:00",
+        "text": "Breve columna sobre el estado de la construcci\u00f3n del Canal de Panam\u00e1, en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521825/Hemeroteca_bot/1911_01_01_El_agricultor_722_eqypnh.png",
+        "id": "",
+        "date": "2025-08-14T18:00:00",
+        "text": "Telegramas en el diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521822/Hemeroteca_bot/1911_01_01_El_agricultor_753_khpsdl.png",
+        "id": "",
+        "date": "2025-08-17T18:00:00",
+        "text": "Anuncios varios en el diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1911-01-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521821/Hemeroteca_bot/1914_09_01_El_Agricultor_143_lduk1m.png",
+        "id": "",
+        "date": "2025-08-06T18:00:00",
+        "text": "Encabezado del diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521821/Hemeroteca_bot/1914_09_01_El_Agricultor_156_kcxtkw.png",
+        "id": "",
+        "date": "2025-07-17T18:00:00",
+        "text": "Anuncio en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521820/Hemeroteca_bot/1914_09_01_El_Agricultor_209_ed4hte.png",
+        "id": "",
+        "date": "2025-07-22T18:00:00",
+        "text": "Anuncio  en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521723/Hemeroteca_bot/1914_09_01_El_Agricultor_221_fymd4k.png",
+        "id": "",
+        "date": "2025-08-29T18:00:00",
+        "text": "Anuncio en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521722/Hemeroteca_bot/1914_09_01_El_Agricultor_231_m60hcf.png",
+        "id": "",
+        "date": "2025-08-04T18:00:00",
+        "text": "Anuncio en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521722/Hemeroteca_bot/1914_09_01_El_Agricultor_249_nlh9ff.png",
+        "id": "",
+        "date": "2025-07-30T18:00:00",
+        "text": "Condiciones para publicar en el diario chiricano El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521716/Hemeroteca_bot/1914_09_01_El_Agricultor_337_swftfb.png",
+        "id": "",
+        "date": "2025-08-01T18:00:00",
+        "text": "Conocimientos \u00fatiles para destruir pulgas, en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521710/Hemeroteca_bot/1914_09_01_El_Agricultor_416_xhanyz.png",
+        "id": "",
+        "date": "2025-08-18T18:00:00",
+        "text": "Columna con el tema: para probar diamante, en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521704/Hemeroteca_bot/1914_09_01_El_Agricultor_433_ftgbr9.png",
+        "id": "",
+        "date": "2025-07-16T18:00:00",
+        "text": "Anuncio de perfume en el diario El Agricultor: comercio, agricultura, ciencias y artes.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1914-09-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521702/Hemeroteca_bot/1919_12_01_Cuasimodo_332_nupy7l.png",
+        "id": "",
+        "date": "2025-07-24T18:00:00",
+        "text": "Columna sobre el agua potable en la ciudad, en la revista revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1919-12-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521701/Hemeroteca_bot/1919_12_01_Cuasimodo_537_dzaalj.png",
+        "id": "",
+        "date": "2025-08-24T18:00:00",
+        "text": "Columna en la revista Cuasimodo: magazine interamericano. Director: Nemesio Canales",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1919-12-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521704/Hemeroteca_bot/1920_03_01_Cuasimodo_005_r3bjka.png",
+        "id": "",
+        "date": "2025-08-23T18:00:00",
+        "text": "Portada de la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521700/Hemeroteca_bot/1920_03_01_Cuasimodo_031_jjqbkw.png",
+        "id": "",
+        "date": "2025-08-22T18:00:00",
+        "text": "Encabezado de la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521684/Hemeroteca_bot/1920_03_01_Cuasimodo_050_kmsmbq.png",
+        "id": "",
+        "date": "2025-07-23T18:00:00",
+        "text": "Anuncio de la compa\u00f1\u00eda internacional de seguros en el hist\u00f3rico edificio de la avenida central, revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521684/Hemeroteca_bot/1920_03_01_Cuasimodo_118_cturur.png",
+        "id": "",
+        "date": "2025-08-21T18:00:00",
+        "text": "Anuncio de La Imperial, en la plaza de Santa Ana, en la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521684/Hemeroteca_bot/1920_03_01_Cuasimodo_133_dpuzdu.png",
+        "id": "",
+        "date": "2025-08-20T18:00:00",
+        "text": "Anuncio de una ferreteria en la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521683/Hemeroteca_bot/1920_03_01_Cuasimodo_138_rymsss.png",
+        "id": "",
+        "date": "2025-08-28T18:00:00",
+        "text": "Anuncio de comercial general en la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
+        "isPublished": false
+    },
+    {
+        "image": "v1752521683/Hemeroteca_bot/1920_03_01_Cuasimodo_218_qrhov4.png",
+        "id": "",
+        "date": "2025-08-16T18:00:00",
+        "text": "Anuncio de la Fruteria Central, ubicada en la avenida Central, en la revista Cuasimodo: magazine interamericano.",
+        "source": "Biblioteca Nacional de Panam\u00e1",
+        "published": "1920-03-01",
         "isPublished": false
     }
 ]
