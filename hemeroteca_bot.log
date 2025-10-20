@@ -1281,6 +1281,7 @@ INFO:
 INFO:💾 Not posted: 2, posted: 100
 INFO:✅ Updated JSON file saved.
 INFO:
+<<<<<<< HEAD
 ***** ***** ***** 2025-10-13 18:21:00 ***** ***** *****
 INFO:💾 Not posted: 2, posted: 100
 INFO:✅ Updated JSON file saved.
@@ -1312,3 +1313,57 @@ INFO:
 ***** ***** ***** 2025-10-20 18:23:11 ***** ***** *****
 INFO:💾 Not posted: 2, posted: 100
 INFO:✅ Updated JSON file saved.
+=======
+***** ***** ***** 2025-10-12 21:49:31 ***** ***** *****
+INFO:
+***** ***** ***** 2025-10-12 21:49:38 ***** ***** *****
+INFO:
+***** ***** ***** 2025-10-12 21:50:32 ***** ***** *****
+INFO:
+***** ***** ***** 2025-10-12 21:50:57 ***** ***** *****
+INFO:
+***** ***** ***** 2025-10-12 21:51:07 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:51:36 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:52:02 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:53:12 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:53:32 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:53:52 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:55:27 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:55:41 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+INFO:
+***** ***** ***** 2025-10-12 21:56:03 ***** ***** *****
+INFO:
+Cloudinary connection successful!
+
+>>>>>>> ecb7164 (New files until november 26)

@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 import os
 
 # Define the range for random dates
-start_date = datetime(2025, 7, 15, 18, 0, 0)  # Start of the interval
-end_date = datetime(2025, 9, 1, 18, 0, 0)  # End of the interval
+start_date = datetime(2025, 10, 20, 18, 0, 0)  # Start of the interval
+end_date = datetime(2025, 11, 25, 18, 0, 0)  # End of the interval
 
 # Set to track used dates
 used_dates = set()
@@ -128,6 +128,6 @@ def CheckAndSortDates():
 # Call the function
 
 
-# SetDatesToJSON()
+SetDatesToJSON()
 CheckIfRepeatedDates()
 # CheckAndSortDates()

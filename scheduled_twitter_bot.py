@@ -86,7 +86,7 @@ def ConnectToCloudinary():
     try:
         cloudinary.api.ping()
         logging.info("\nCloudinary connection successful!\n")
-        # GetFolderFiles()
+        GetFolderFiles()
         return cloudinary
     except Exception as e:
         logging.info("Error connecting to Cloudinary")
@@ -94,6 +94,7 @@ def ConnectToCloudinary():
 
 
 def GetFolderFiles():
+    print("Fetching files from Cloudinary folder...")
     folder_name = "Hemeroteca_bot"
     try:
         # Fetch all resources in the specified folder
@@ -101,9 +102,12 @@ def GetFolderFiles():
             type="upload", prefix=folder_name, max_results=500
         )
         files = resources.get("resources", [])
+        print(f"Found {len(files)} files in folder '{folder_name}'.")
         for file in files:
             # TODO: Check if file exist in data.json. if not, add it as a template element of the json.
-            logging.debug(f"URL: {file}\n")
+            print(
+                f"URL: {file['url'].split('http://res.cloudinary.com/dcvnw6hvt/image/upload/')[1]}"
+            )
         return files
     except Exception as e:
         logging.debug(f"Error fetching files from folder '{folder_name}': {e}")
@@ -142,7 +146,7 @@ def generar_tweet(tweet_data, formatted_date):
     tweet_text = (
         f"{texto_principal}"
         f"{fecha_str}"
-        f"{emoji_fuente} Fuente: {tweet_data["source"]}\n"
+        f"{emoji_fuente}    Fuente: {tweet_data["source"]}\n"
     )
 
     # Añadir hashtags aleatorios (opcional)
@@ -236,5 +240,6 @@ def post_scheduled_tweets():
 # scheduler.add_job(post_scheduled_tweets, "interval", seconds=10)
 # scheduler.start()
 
-# ConnectToCloudinary() # Commented because we take the URL from json.
-post_scheduled_tweets()
+ConnectToCloudinary()  # Commented because we take the URL from json.
+GetFolderFiles()
+# post_scheduled_tweets()
