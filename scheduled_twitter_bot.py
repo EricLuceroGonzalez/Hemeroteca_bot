@@ -240,6 +240,6 @@ def post_scheduled_tweets():
 # scheduler.add_job(post_scheduled_tweets, "interval", seconds=10)
 # scheduler.start()
 
-ConnectToCloudinary()  # Commented because we take the URL from json.
-GetFolderFiles()
-# post_scheduled_tweets()
+# ConnectToCloudinary()  # Commented because we take the URL from json.
+# GetFolderFiles()
+post_scheduled_tweets()
