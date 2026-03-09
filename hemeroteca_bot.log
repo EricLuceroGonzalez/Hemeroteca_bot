@@ -2235,3 +2235,21 @@ Traceback (most recent call last):
 tweepy.errors.TwitterServerError: 503 Service Unavailable
 Service Unavailable
 2026-03-09 13:32:28,515 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 12:37:22,885 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 12:37:22,929 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 12:37:24,343 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/home/runner/work/Hemeroteca_bot/Hemeroteca_bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 12:37:24,347 - INFO - --- PROCESO FINALIZADO ---
