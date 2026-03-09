@@ -2068,3 +2068,170 @@ INFO:
 ***** ***** ***** 2026-03-08 18:27:43 ***** ***** *****
 INFO:💾 Not posted: 5, posted: 123
 INFO:✅ Updated JSON file saved.
+2026-03-09 13:22:28,750 - INFO - 
+***** ***** ***** 2026-03-09 13:22:28 ***** ***** *****
+2026-03-09 13:24:15,190 - INFO - 
+***** ***** ***** 2026-03-09 13:24:15 ***** ***** *****
+2026-03-09 13:24:18,818 - INFO - 💾 Not posted: 128, posted: 0
+2026-03-09 13:24:18,821 - INFO - ✅ Updated JSON file saved.
+2026-03-09 13:24:46,361 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:24:46,363 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:24:52,217 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:24:52,228 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:25:40,043 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:25:40,047 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:25:43,279 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/aaa_testing", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:25:43,283 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:26:55,112 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:26:55,115 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:26:57,829 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:26:57,833 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:27:09,652 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:27:09,654 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:27:11,495 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:27:11,503 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:27:57,389 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:27:57,391 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:27:59,420 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:27:59,428 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:32:20,822 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:32:20,825 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:32:22,862 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:32:22,871 - INFO - --- PROCESO FINALIZADO ---
+2026-03-09 13:32:26,427 - INFO - --- INICIANDO PROCESO HEMEROTECA ---
+2026-03-09 13:32:26,429 - INFO - Intentando publicar item ID: 010-2025
+2026-03-09 13:32:28,512 - ERROR - 💥 Fallo crítico: 503 Service Unavailable
+Service Unavailable
+Traceback (most recent call last):
+  File "/Users/ericlucero/Documents/Academic/Python_Fun/Random_projcts/Bot/scheduled_twitter_bot.py", line 141, in post_from_hemeroteca
+    client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 845, in create_tweet
+    return self._make_request(
+           ~~~~~~~~~~~~~~~~~~^
+        "POST", f"/2/tweets", json=json, user_auth=user_auth
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 129, in _make_request
+    response = self.request(method, route, params=request_params,
+                            json=json, user_auth=user_auth)
+  File "/Users/ericlucero/.local/share/virtualenvs/Random_projcts-gdSHAIY_/lib/python3.13/site-packages/tweepy/client.py", line 117, in request
+    raise TwitterServerError(response)
+tweepy.errors.TwitterServerError: 503 Service Unavailable
+Service Unavailable
+2026-03-09 13:32:28,515 - INFO - --- PROCESO FINALIZADO ---

@@ -2,244 +2,165 @@ import tweepy
 import os
 import json
 import requests
-import locale
-from datetime import datetime
-from dotenv import load_dotenv
 import logging
 import random
+import sys
+from datetime import datetime
+from dotenv import load_dotenv
 from babel.dates import format_date
 
-
+# --- CONFIGURACIÓN DE LOGS ---
+log_path = os.path.join(os.path.dirname(__file__), "hemeroteca_bot.log")
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(log_path, encoding="utf-8"),
+        logging.StreamHandler(sys.stdout),  # Ver en terminal (útil para GitHub Actions)
+    ],
+)
 logger = logging.getLogger(__name__)
 
-# file_path = os.path.join(os.path.dirname(__file__), "data.json")
-logging.basicConfig(
-    filename=f"{os.path.dirname(__file__)}/hemeroteca_bot.log",
-    encoding="utf-8",
-    # filemode="w",
-    format="%(levelname)s:%(message)s",
-    level=logging.INFO,
-)
-today = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-logging.info(f"\n***** ***** ***** {today} ***** ***** *****")
-# from apscheduler.schedulers.blocking import BlockingScheduler
-
-# Cloudinary libraries for uploading/getting images
-import cloudinary
-import cloudinary.api
-
-# Set locale to Spanish for date formatting
-try:
-    locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
-except locale.Error:
-    # Fallback: use the default locale or log a warning
-    # logging.error("Locale 'es_ES.UTF-8' not available. Using default locale.")
-    pass
-
-# Load environment variables from .env file
 load_dotenv()
-IMAGE_URL = os.getenv("CLOUDINARY_BASE_URL")
 
 
-# Get credentials with error handling
+# --- UTILIDADES ---
 def get_credential(name):
-    value = os.getenv(name)
-    if not value:
-        logging.error(f"Missing required environment variable: {name}")
-        raise ValueError(f"Missing required environment variable: {name}")
-    return value
+    val = os.getenv(name)
+    if not val:
+        raise ValueError(f"Falta la variable de entorno: {name}")
+    return val
 
 
-# Twitter API credentials
-client = tweepy.Client(
-    bearer_token=get_credential("X_BEARER_TOKEN"),
-    consumer_key=get_credential("X_API_KEY"),
-    consumer_secret=get_credential("X_API_KEY_SECRET"),
-    access_token=get_credential("X_ACCESS_TOKEN"),
-    access_token_secret=get_credential("X_ACCESS_TOKEN_SECRET"),
-)
-
-auth = tweepy.OAuthHandler(
-    get_credential("X_API_KEY"),
-    get_credential("X_API_KEY_SECRET"),
-    get_credential("X_ACCESS_TOKEN"),
-    get_credential("X_ACCESS_TOKEN_SECRET"),
-)
-
-auth.set_access_token(
-    os.getenv("X_ACCESS_TOKEN"),
-    os.getenv("X_ACCESS_TOKEN_SECRET"),
-)
-
-api = tweepy.API(auth)
-
-
-def ConnectToCloudinary():
-    # Connect to Cloudinary
-    cloudinary.config(
-        cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
-        api_key=os.getenv("CLOUDINARY_API_KEY"),
-        api_secret=os.getenv("CLOUDINARY_API_SECRET"),
-        secure=True,
-    )
-    # Check if the connection is successful
-    try:
-        cloudinary.api.ping()
-        logging.info("\nCloudinary connection successful!\n")
-        GetFolderFiles()
-        return cloudinary
-    except Exception as e:
-        logging.info("Error connecting to Cloudinary")
-        return None
-
-
-def GetFolderFiles():
-    print("Fetching files from Cloudinary folder...")
-    folder_name = "Hemeroteca_bot"
-    try:
-        # Fetch all resources in the specified folder
-        resources = cloudinary.api.resources(
-            type="upload", prefix=folder_name, max_results=500
-        )
-        files = resources.get("resources", [])
-        print(f"Found {len(files)} files in folder '{folder_name}'.")
-        for file in files:
-            # TODO: Check if file exist in data.json. if not, add it as a template element of the json.
-            print(
-                f"URL: {file['url'].split('http://res.cloudinary.com/dcvnw6hvt/image/upload/')[1]}"
-            )
-        return files
-    except Exception as e:
-        logging.debug(f"Error fetching files from folder '{folder_name}': {e}")
-        return []
-
-
-# Lista de emojis relevantes para contenido histórico/archivístico
 EMOJIS = {
-    "opener": ["📰", "📜", "🎞️", "🧳", "🗞️", "🔍", "📸", "🏛️", "👀", "💾"],
-    "items": ["✨", "🌟", "🔹", "🎯", "🔖", "📌", "🌀"],
-    "publicado": ["📅", "🗓️", "🕰️", "⌛️"],
-    "fuente": ["📚", "🏷️", "🗃️", "🖋️", "🌴", "⛲️"],
+    "opener": ["📰", "📜", "🎞️", "🗞️", "🔍", "📸", "🏛️"],
+    "items": ["✨", "🔹", "🎯", "🔖", "📌"],
+    "publicado": ["📅", "🗓️", "🕰️"],
+    "fuente": ["📚", "🏷️", "🗃️", "🌴"],
 }
 
 
-def generar_tweet(tweet_data, formatted_date):
-    # Seleccionar emojis aleatorios
-    emoji_opener = random.choice(EMOJIS["opener"])
-    emoji_publicado = random.choice(EMOJIS["publicado"])
-    emoji_item = random.choice(EMOJIS["items"])
-    emoji_fuente = random.choice(EMOJIS["fuente"])
+def generar_texto_tweet(tweet_data):
+    """Construye el cuerpo del mensaje con emojis aleatorios."""
+    try:
+        pub_date = datetime.strptime(tweet_data["published"], "%Y-%m-%d")
+        f_date = format_date(pub_date, "d 'de' MMMM 'de' yyyy", locale="es")
+    except:
+        f_date = "fecha desconocida"
 
-    # Formatear fecha
-    if formatted_date != "No date":
-        fecha_str = f"{emoji_publicado} Publicado el {formatted_date}\n"
-    else:
-        fecha_str = f"{emoji_item} Hace un tiempo\n"
+    opener = random.choice(EMOJIS["opener"])
+    item_m = random.choice(EMOJIS["items"])
+    fuente_m = random.choice(EMOJIS["fuente"])
+    reloj = random.choice(EMOJIS["publicado"])
 
-    # Construir texto principal
-    if tweet_data["text"] != "":
-        texto_principal = f"{emoji_opener} {tweet_data['text']}\n"
-    else:
-        texto_principal = f"{emoji_opener} Archivo de hemeroteca.\n"
-
-    # Construir tweet completo
-    tweet_text = (
-        f"{texto_principal}"
-        f"{fecha_str}"
-        f"{emoji_fuente}    Fuente: {tweet_data["source"]}\n"
+    texto = (
+        f"{opener} {tweet_data.get('text', 'Archivo de hemeroteca.')}\n\n"
+        f"{reloj} Publicado el {f_date}\n"
+        f"{fuente_m} Fuente: {tweet_data.get('source', 'Biblioteca Nacional')}"
     )
 
-    # Añadir hashtags aleatorios (opcional)
-    hashtags = [
-        "#PanamáAntiguo",
-        "#MemoriaDigital",
-        "#HistoriaViva",
-        "#ArchivoPanamá",
-        "#Hemeroteca",
-        "#CulturaPanameña",
-        "#BibliotecaNacional",
-    ]
-    if random.random() > 0.5:  # 50% de probabilidad de añadir hashtag
-        tweet_text += f" {random.choice(hashtags)}"
+    # Hashtags aleatorios
+    tags = ["#PanamáAntiguo", "#Historia", "#Hemeroteca", "#Archivo"]
+    if random.random() > 0.5:
+        texto += f"\n\n{random.choice(tags)}"
 
-    return tweet_text
+    return texto
 
 
-# Function to post tweets from JSON file
-def post_scheduled_tweets():
+# --- LÓGICA PRINCIPAL ---
+def post_from_hemeroteca():
     json_path = os.path.join(os.path.dirname(__file__), "data.json")
-    # Load JSON file
-    logging.debug(f"Loading JSON file from {json_path}...")
-    with open(json_path, "r") as f:
-        logging.debug("Loading JSON file...")
-        tweets = json.load(f)
 
-    # Get current date and time
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            tweets = json.load(f)
+    except Exception as e:
+        logger.error(f"Error cargando JSON: {e}")
+        return
+
     now = datetime.now()
+    tweet_a_publicar = None
 
-    not_posted = 0
-    posted = 0
-    for tweet in tweets:
-        # Parse the scheduled date and time
-        scheduled_time = datetime.strptime(tweet["date"], "%Y-%m-%dT%H:%M:%S")
-        # Check if the tweet is scheduled for the current date
-        if scheduled_time.date() == now.date():
-            # and not tweet.get("isPublished", False):
-            # Download the image from Cloudinary
-            image_url = IMAGE_URL + tweet["image"]
-            logging.info(f"Downloading image from Cloud..")
-            image_response = requests.get(image_url)
-            image_path = f"{os.path.dirname(__file__)}/temp_image.jpg"
-            with open(image_path, "wb") as img_file:
-                img_file.write(image_response.content)
+    # BUSCAR CANDIDATO:
+    # 1. Que su fecha programada ya haya pasado o sea hoy
+    # 2. Que tenga el menor número de publicaciones posibles
+    # 3. Ordenados por fecha para no saltarnos el orden cronológico
 
-            # Upload the image to Twitter
-            media = api.media_upload(image_path)
-            if media.media_id:
-                logging.info("✅ Image uploaded successfully.")
-            else:
-                logging.error("❌ Failed to upload image.")
-                continue
+    candidatos = [
+        t for t in tweets if datetime.strptime(t["date"], "%Y-%m-%dT%H:%M:%S") <= now
+    ]
 
-            # Post the tweet with the image and text
-            if tweet["published"] != "":
-                # Format dates in Spanish
-                published_date = datetime.strptime(tweet["published"], "%Y-%m-%d")
-                formatted_date = format_date(
-                    published_date, "d 'de' MMMM 'de' yyyy", locale="es"
-                )
-            else:
-                formatted_date = "No date"
+    # Ordenamos por veces_publicado (asc) y luego por fecha (asc)
+    candidatos.sort(key=lambda x: (x.get("veces_publicado", 0), x["date"]))
 
-            tweet_text = generar_tweet(tweet, formatted_date)
-            client.create_tweet(text=tweet_text, media_ids=[media.media_id])
-            tweet["isPublished"] = True
-            logging.info(f"Tweet posted: {tweet_text}")
+    if not candidatos:
+        logger.info("💤 No hay contenido programado para hoy o fechas anteriores.")
+        return
 
-            # Remove the temporary image file# logging.debug(f"Scheduled time: {scheduled_time}")
-            # Remove the temporary image file
-            if os.path.exists(image_path):
-                os.remove(image_path)
-                logging.info(f"Temporary image file removed.")
-            else:
-                logging.warning(f"Temporary image file does not exist.")
-        if tweet["isPublished"] == False:
-            not_posted += 1
-        if tweet["isPublished"] == True:
-            posted += 1
-    logging.info(f"💾 Not posted: {not_posted}, posted: {posted}")
-    # Save the updated JSON file
-    with open(json_path, "w") as f:
-        json.dump(tweets, f, indent=4)
-        logging.info("✅ Updated JSON file saved.")
+    tweet_a_publicar = candidatos[0]
+    idx_en_lista = tweets.index(tweet_a_publicar)
+
+    try:
+        # 1. Conexiones
+        logger.info(f"Intentando publicar item ID: {tweet_a_publicar.get('id', 'N/A')}")
+
+        # Twitter V1.1 (para media) y V2 (para tweet)
+        auth = tweepy.OAuthHandler(
+            get_credential("X_API_KEY"), get_credential("X_API_KEY_SECRET")
+        )
+        auth.set_access_token(
+            get_credential("X_ACCESS_TOKEN"), get_credential("X_ACCESS_TOKEN_SECRET")
+        )
+        api_v1 = tweepy.API(auth)
+
+        client_v2 = tweepy.Client(
+            bearer_token=get_credential("X_BEARER_TOKEN"),
+            consumer_key=get_credential("X_API_KEY"),
+            consumer_secret=get_credential("X_API_KEY_SECRET"),
+            access_token=get_credential("X_ACCESS_TOKEN"),
+            access_token_secret=get_credential("X_ACCESS_TOKEN_SECRET"),
+        )
+
+        # 2. Manejo de Imagen
+        img_url = tweet_a_publicar["image"]
+        # Si la URL no es completa, le pegamos la base de Cloudinary
+        if not img_url.startswith("http"):
+            img_url = os.getenv("CLOUDINARY_BASE_URL") + img_url
+
+        temp_img = os.path.join(os.path.dirname(__file__), "temp_item.jpg")
+        res = requests.get(img_url, timeout=15)
+        res.raise_for_status()
+
+        with open(temp_img, "wb") as f:
+            f.write(res.content)
+
+        # 3. Subida y Publicación
+        media = api_v1.media_upload(temp_img)
+        texto_final = generar_texto_tweet(tweet_a_publicar)
+
+        client_v2.create_tweet(text=texto_final, media_ids=[media.media_id])
+
+        # 4. Actualizar Datos
+        tweets[idx_en_lista]["isPublished"] = True
+        tweets[idx_en_lista]["veces_publicado"] = (
+            tweets[idx_en_lista].get("veces_publicado", 0) + 1
+        )
+
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(tweets, f, indent=4, ensure_ascii=False)
+
+        logger.info(
+            f"✅ ÉXITO: Publicado intento #{tweets[idx_en_lista]['veces_publicado']}"
+        )
+
+        if os.path.exists(temp_img):
+            os.remove(temp_img)
+
+    except Exception as e:
+        logger.error(f"💥 Fallo crítico: {e}", exc_info=True)
 
 
-# # At the end Scheduler is not applied because Github Actions does the job.
-# Scheduler to run the function once every 24 hours
-# scheduler = BlockingScheduler()
-# scheduler.add_job(post_scheduled_tweets, "interval", seconds=10)
-# scheduler.start()
-
-# ConnectToCloudinary()  # Commented because we take the URL from json.
-# GetFolderFiles()
-post_scheduled_tweets()
+if __name__ == "__main__":
+    logger.info("--- INICIANDO PROCESO HEMEROTECA ---")
+    post_from_hemeroteca()
+    logger.info("--- PROCESO FINALIZADO ---")
