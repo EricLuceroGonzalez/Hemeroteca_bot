@@ -10,9 +10,23 @@ from babel.dates import format_date
 
 # USAMOS TU MÓDULO DE CONEXIÓN QUE YA TIENE AMBOS MOTORES
 from connect_Twitter import connect_to_twitter
+from connect_mongo import get_mongo_collection
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+
+log_file = os.path.join(os.path.dirname(__file__), "hemeroteca_bot.log")
+# file_path = os.path.join(os.path.dirname(__file__), "data.json")
+logging.basicConfig(
+    encoding="utf-8",
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
+    handlers=[
+        logging.FileHandler(log_file, encoding="utf-8"),
+        logging.StreamHandler(sys.stdout),
+    ],
+)
 logger = logging.getLogger(__name__)
+today = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+logger.info(f"***** ***** ***** {today} ***** ***** *****")
 
 
 def post_hemeroteca_hybrid():

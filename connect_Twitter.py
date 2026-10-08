@@ -37,13 +37,11 @@ def connect_to_twitter():
             get_credential("X_ACCESS_TOKEN_SECRET"),
         )
 
-        # auth.set_access_token(
-        #     os.getenv("X_ACCESS_TOKEN"),
-        #     os.getenv("X_ACCESS_TOKEN_SECRET"),
-        # )
-
         api = tweepy.API(auth)
         logging.info("Connected to Twitter successfully!")
+        print("Connected to Twitter successfully!")
+        print(f"client: {client}")
+        print(f"api: {api}")
         return client, api
     except tweepy.errors.TweepyException as e:
         logging.error(f"Tweepy error on: {e}")
